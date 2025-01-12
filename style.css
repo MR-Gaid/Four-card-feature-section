@@ -1,0 +1,142 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.938rem;
+    background-color: #fafafa;
+}
+
+main {
+    width: 80%;
+    max-width: 700px;
+    margin: 5em auto;
+}
+
+header {
+    margin-block-end: 2.5em;
+    padding: 0.5em;
+}
+
+.header-normal-title {
+    font-size: clamp(1rem, 6vw, 3.5rem);
+    font-weight: 200;
+    color: #4c4e61;
+    opacity: 80%;
+    text-align: center;
+}
+
+.header-bold-title {
+    font-size: clamp(1rem, 6vw, 3.5rem);
+    font-weight: 600;
+    color: #4c4e61;
+    margin-block-end: 0.7em;
+    text-align: center;
+}
+
+.header-text {
+    color: #4c4e61;
+    opacity: 80%;
+    font-size: clamp(0.5rem, 3vw, 1rem);
+    text-align: center;
+}
+
+/* articles */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.meddil {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.6em;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 20%;
+    max-width: 15%;
+    align-self:last baseline;
+    margin-block-start: 1.7em;
+}
+
+/* left-side*/
+.sup-flex {
+    border-top: 3.5px solid #45d3d3;
+}
+
+.team-flex {
+    border-top: 3.5px solid #ea5353;
+}
+
+.karma-flex {
+    border-top: 3.5px solid #fcaf4a;
+}
+
+.calc-flex {
+    border-top: 3.5px solid #549ef2;
+}
+
+.flex-header {
+    font-size: clamp(1rem, 5vw, 2rem);
+    font-weight: 600;
+    color: #4c4e61;
+    margin-block-end: 0.4em;
+}
+
+.flex-text {
+    font-size: clamp(0.5rem, 5vw, 1rem);
+    color: #4c4e61;
+    opacity: 80%;
+}
+
+
+footer {
+    font-size: clamp(0.4rem, 2vw, 0.9rem);
+    margin-top: 5em;
+    text-align: center;
+}
+
+/* Media query */
+@media (min-width: 1000px) {
+    main {
+        max-width: 100%;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .left-side {
+        flex-basis: 33%;
+        align-self: center;
+    }
+
+    .meddil {
+        flex-basis: 33%;
+    }
+
+    .right-side {
+        flex-basis: 33%;
+        align-self: center;
+    }
+}
